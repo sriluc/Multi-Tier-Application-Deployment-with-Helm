@@ -1,0 +1,11 @@
+replicaCount: 1
+image:
+  repository: postgres
+  tag: 13
+  pullPolicy: IfNotPresent
+service:
+  type: ClusterIP
+  port: 5432
+persistence:
+  enabled: true
+  size: 10Gi
